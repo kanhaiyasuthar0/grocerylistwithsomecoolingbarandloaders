@@ -2,6 +2,7 @@ import React from 'react'
 import Loader from './Loader'
 
 
+
 const GroceryList = ({item , loading , getDataFromServer  }) => {
     
    const handleDelete = (e , index, li)=>{
@@ -27,14 +28,14 @@ const GroceryList = ({item , loading , getDataFromServer  }) => {
       <h2>GroceryList</h2>
 
 
-      {loading ? <Loader/> : <ul style={{listStyle:"none"}}> 
+      {loading ? <Loader/> : <ul style={{listStyle:"none" }}> 
       
       {item.map((li , index)=>{
-       return  <div key={li.id}> 
-        <div> {li.title} <button key={index} onClick={(event)=>handleDelete(event , index, li)}>DELETE</button></div>      
+       return  <div style={{display:"flex" , justifyContent:"space-around" , maxWidth:"30vw", margin:"auto"}} key={li.id}> 
+        <div> {li.title} </div>  <button key={index} onClick={(event)=>handleDelete(event , index, li)}><i style={{color:"red"}} className="fa-solid fa-trash-can"></i></button>    
          </div> 
           
-         
+          
           
       })}
       </ul> }

@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("../public/grocery.jpg");
+  /* background-size: cover; */
+  background-size:cover;
+  /* color: white; */
+  background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 code {

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-
+import "../styles/grocery.css"
 const GroceryInput = ({ handleAdd }) => {
   const [text, setText] = useState("");
 
   return (
     <>
-      <input
+      <input className="inputBar"
         type="text"
         value={text}
         onChange={(e) => {
@@ -19,7 +19,7 @@ const GroceryInput = ({ handleAdd }) => {
           setText("")
         }}
       >
-        Add
+        <i className="fa-solid fa-plus"></i>
       </button>
     </>
   );

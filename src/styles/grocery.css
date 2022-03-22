@@ -1,0 +1,11 @@
+.inputBar{
+    outline: none;
+    border: none;
+    /* border-width: 10%; */
+    
+    transition: all;
+}
+/* .inputBar:active{
+     
+} */
+
